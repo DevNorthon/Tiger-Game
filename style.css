@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+.game-board {
+    width: 76%;
+    height: 500px;
+    border-bottom: 1px solid #333;
+    margin-inline: 13rem;
+    margin-block-start: 7rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.city {
+    width: 100%;
+}
+
+.car {
+    position: absolute;
+    bottom: 0;
+    height: 125px;
+    width: 170px;
+    right: -170px;
+    animation: car-animation 2s infinite linear;
+}
+
+.tiger {
+    position: absolute;
+    bottom: 15px;
+    width: 165px;
+}
+
+.animate {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes car-animation {
+    from {
+        right: -170;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 150px;
+    }
+
+    55% {
+        bottom: 150px;
+    }
+
+    60% {
+        bottom: 150px;
+    }
+
+    65% {
+        bottom: 150px;
+    }
+
+    70% {
+        bottom: 150px;
+    }
+
+    75% {
+        bottom: 150px;
+    }
+
+    80% {
+        bottom: 150px;
+    }
+
+    85% {
+        bottom: 150px;
+    }
+
+    90% {
+        bottom: 150px;
+    }
+
+    95% {
+        bottom: 150px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
